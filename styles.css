@@ -10,7 +10,6 @@ body {
 .keyboard {
   display: grid;
   grid-template-columns: repeat(30, 1fr);
-  grid-template-rows: repeat(5, 65px);
   gap: 10px;
   width: 1200px;
 }
@@ -20,6 +19,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  grid-column: span 2;
   padding: 5px;
   font-family: "Space Mono", sans-serif;
   font-size: 18px;
@@ -32,10 +32,6 @@ body {
 
 .key:hover {
   background-color: #fff;
-}
-
-.span-2 {
-  grid-column: span 2;
 }
 
 .span-3 {
@@ -52,4 +48,12 @@ body {
 
 .span-14 {
   grid-column: span 14;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.w-100 {
+  width: 100%;
 }
